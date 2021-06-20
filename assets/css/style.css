@@ -3,17 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-    html, body {
-        @apply font-primary;
-    }
+    html, body { @apply font-primary; }
+    button { @apply focus:outline-none ring-0 border-0; }
 }
 
 @layer components {
-    .btn-primary {
-        @apply bg-primary-500 text-white py-3 px-6 rounded-md hover:bg-primary-600 transition-all;
-    }
-
-    header nav ul li a {
-        @apply inline-block py-3 border-b-4 border-primary hover:border-white transition-all;
-    }
+    .rgs-container { @apply container max-w-screen-xl px-5 }
+    .rgs-button { @apply bg-primary-500 text-white py-3 px-6 rounded-md hover:bg-primary-600 transition-all; }
 }
