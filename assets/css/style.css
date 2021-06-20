@@ -8,19 +8,25 @@
 }
 
 @layer components {
-    .backdrop { @apply absolute left-0 top-0 invisible opacity-0 w-screen h-screen bg-gray-700 z-10 transition-all lg:hidden; }
+    .backdrop { @apply absolute left-0 top-0 invisible opacity-0 w-screen h-screen bg-black z-10 transition-all lg:hidden; }
     .backdrop.active { @apply visible opacity-50 lg:hidden; }
 
-    .rgs-container { @apply container max-w-screen-xl px-5; }
+    .rgs-container { @apply max-w-screen-xl mx-auto px-5; }
     .rgs-button { @apply bg-primary-500 text-white py-3 px-6 rounded-md transition-all hover:bg-primary-600; }
 
-    header { @apply fixed top-0 w-full shadow-lg bg-primary flex justify-center py-6; }
+    header { @apply fixed z-20 top-0 w-full shadow-lg bg-primary py-6; }
     header .header-nav { @apply hidden lg:block; }
     header .header-nav-items { @apply flex items-center text-sm space-x-6 text-white; }
     header .header-nav-item { @apply inline-block py-3 border-b-2 border-transparent transition-all text-center hover:border-white; }
-    header .header-sidenav { @apply absolute right-0 top-0 z-20 w-56 h-screen shadow-md transform translate-x-full transition-all bg-white text-sm shadow-md py-3 lg:hidden; }
+    header .header-sidenav { @apply absolute right-0 top-0 z-20 w-64 h-screen shadow-md transform translate-x-full transition-all bg-white text-sm shadow-md py-6 lg:hidden; }
     header .header-sidenav.active { @apply translate-x-0 lg:hidden; }
-    header .header-sidenav-item { @apply block px-5 py-5 hover:bg-gray-100; }
+    header .header-sidenav-item { @apply block px-6 py-5 hover:bg-gray-100; }
     header .header-sidenav-button { @apply inline-block text-2xl text-white lg:hidden; }
+
+    .banner { @apply relative mt-20 py-6 lg:px-12 overflow-hidden; height: calc(100vh - 150px); }
+    .banner .banner-wrapper { @apply flex items-end md:items-center justify-end h-full; }
+    .banner .banner-background { @apply absolute left-0 top-0 w-full h-full object-cover; }
+    .banner .banner-content { @apply relative bg-black bg-opacity-60 w-96 text-2xl text-white p-10 leading-normal; }
+    .banner .banner-content strong { @apply text-primary; }
 }
 
