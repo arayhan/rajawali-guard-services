@@ -12,7 +12,8 @@
     .backdrop.active { @apply visible opacity-50 lg:hidden; }
 
     .rgs-container { @apply max-w-screen-xl mx-auto px-5; }
-    .rgs-button { @apply bg-primary-500 text-white py-3 px-6 rounded-md transition-all hover:bg-primary-600; }
+    .rgs-button { @apply bg-primary-500 text-white py-3 px-12 border-2 border-primary rounded-md transition-all hover:bg-primary-600; }
+    .rgs-button.outline { @apply bg-transparent text-primary hover:bg-primary-600 hover:text-white; }
 
     header { @apply fixed z-20 top-0 w-full shadow-lg bg-primary py-6; }
     header .header-nav { @apply hidden lg:block; }
@@ -28,5 +29,7 @@
     .banner .banner-background { @apply absolute left-0 top-0 w-full h-full object-cover; }
     .banner .banner-content { @apply relative bg-black bg-opacity-60 w-96 text-2xl text-white p-10 leading-normal; }
     .banner .banner-content strong { @apply text-primary; }
+
+
 }
 
