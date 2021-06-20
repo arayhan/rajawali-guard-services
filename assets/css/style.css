@@ -30,6 +30,6 @@
     .banner .banner-content { @apply relative bg-black bg-opacity-60 w-96 text-2xl text-white p-10 leading-normal; }
     .banner .banner-content strong { @apply text-primary; }
 
-
+    .sdm .sdm-banner { height: 450px; }
 }
 
