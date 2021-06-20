@@ -31,5 +31,6 @@
     .banner .banner-content strong { @apply text-primary; }
 
     .sdm .sdm-banner { height: 450px; }
+    .sdm .sdm-list { list-style-image: url('../img/sdm-list-style-image.png') }
 }
 
