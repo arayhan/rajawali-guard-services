@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="bg-primary flex justify-center py-6">
+    <header class="fixed top-0 w-full shadow-lg bg-primary flex justify-center py-6">
         <div class="rgs-container">
             <div class="flex items-center justify-between">
                 <div>
@@ -20,29 +20,42 @@
                         <img class="w-36" src="./assets/img/logo.png" alt="Rajawali Guard Services">
                     </a>
                 </div>
-                <nav class="hidden lg:block">
-                    <ul class="flex items-center text-sm space-x-6 text-white">
-                        <li><a class="inline-block py-3 border-b-2 border-primary hover:border-white transition-all text-center"
+                <nav>
+                    <ul class="hidden lg:flex items-center text-sm space-x-6 text-white">
+                        <li><a class="inline-block py-3 border-b-2 border-transparent hover:border-white transition-all text-center"
                                 href="#">Beranda</a></li>
-                        <li><a class="inline-block py-3 border-b-2 border-primary hover:border-white transition-all text-center"
+                        <li><a class="inline-block py-3 border-b-2 border-transparent hover:border-white transition-all text-center"
                                 href="#">Tentang Kami</a></li>
-                        <li><a class="inline-block py-3 border-b-2 border-primary hover:border-white transition-all text-center"
+                        <li><a class="inline-block py-3 border-b-2 border-transparent hover:border-white transition-all text-center"
                                 href="#">SDM</a></li>
-                        <li><a class="inline-block py-3 border-b-2 border-primary hover:border-white transition-all text-center"
+                        <li><a class="inline-block py-3 border-b-2 border-transparent hover:border-white transition-all text-center"
                                 href="#">Security Training</a></li>
-                        <li><a class="inline-block py-3 border-b-2 border-primary hover:border-white transition-all text-center"
+                        <li><a class="inline-block py-3 border-b-2 border-transparent hover:border-white transition-all text-center"
                                 href="#">Layanan</a></li>
-                        <li><a class="inline-block py-3 border-b-2 border-primary hover:border-white transition-all text-center"
+                        <li><a class="inline-block py-3 border-b-2 border-transparent hover:border-white transition-all text-center"
                                 href="#">Pendaftaran</a></li>
-                        <li><a class="inline-block py-3 border-b-2 border-primary hover:border-white transition-all text-center"
+                        <li><a class="inline-block py-3 border-b-2 border-transparent hover:border-white transition-all text-center"
                                 href="#">Manajemen</a></li>
-                        <li><a class="inline-block py-3 border-b-2 border-primary hover:border-white transition-all text-center"
+                        <li><a class="inline-block py-3 border-b-2 border-transparent hover:border-white transition-all text-center"
                                 href="#">Kontak</a></li>
                     </ul>
+                    <div class="absolute left-0 top-0 block lg:hidden w-screen h-screen bg-gray-700 z-10 opacity-50">
+                    </div>
+                    <ul
+                        class="absolute right-0 top-0 z-20 w-56 h-screen lg:hidden shadow-md transform bg-white text-sm shadow-md py-3">
+                        <li><a class="block px-6 py-3 hover:bg-gray-100" href="#">Beranda</a></li>
+                        <li><a class="block px-6 py-3 hover:bg-gray-100" href="#">Tentang Kami</a></li>
+                        <li><a class="block px-6 py-3 hover:bg-gray-100" href="#">SDM</a></li>
+                        <li><a class="block px-6 py-3 hover:bg-gray-100" href="#">Security Training</a></li>
+                        <li><a class="block px-6 py-3 hover:bg-gray-100" href="#">Layanan</a></li>
+                        <li><a class="block px-6 py-3 hover:bg-gray-100" href="#">Pendaftaran</a></li>
+                        <li><a class="block px-6 py-3 hover:bg-gray-100" href="#">Manajemen</a></li>
+                        <li><a class="block px-6 py-3 hover:bg-gray-100" href="#">Kontak</a></li>
+                    </ul>
                 </nav>
-                <button>
-                    <svg class="text-2xl text-white" stroke="currentColor" fill="none" stroke-width="0"
-                        viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <button class="text-2xl text-white">
+                    <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
