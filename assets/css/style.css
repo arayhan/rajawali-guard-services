@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    html, body { @apply font-primary; }
+    html, body { @apply font-primary; scroll-behavior: smooth; }
     button { @apply focus:outline-none ring-0 border-0; }
 }
 
