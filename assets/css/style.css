@@ -24,12 +24,6 @@
     header .header-sidenav-item { @apply block px-6 py-5 hover:bg-gray-100; }
     header .header-sidenav-button { @apply inline-block text-3xl text-white lg:hidden; }
 
-    .banner { @apply relative mt-20 py-6 lg:px-12 overflow-hidden; height: calc(100vh - 150px); }
-    .banner .banner-wrapper { @apply flex items-end md:items-center justify-end h-full; }
-    .banner .banner-background { @apply absolute left-0 top-0 w-full h-full object-cover; }
-    .banner .banner-content { @apply relative bg-black bg-opacity-60 text-xl md:text-3xl text-white p-10 leading-loose text-left md:text-left w-2/3; }
-    .banner .banner-content strong { @apply text-primary; }
-
     .sdm .sdm-banner { height: 450px; }
     .sdm .sdm-list { list-style-image: url('../img/sdm-list-style-image.png') }
     
