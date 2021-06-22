@@ -33,8 +33,8 @@
     .sdm .sdm-banner { height: 450px; }
     .sdm .sdm-list { list-style-image: url('../img/sdm-list-style-image.png') }
     
-    #brosur .brosur-list li { @apply flex items-center; }
-    #brosur .brosur-list li:before { 
+    #layanan .brosur-list li { @apply flex items-center; }
+    #layanan .brosur-list li:before { 
         content: '';
         width: 20px;
         height: 20px;
