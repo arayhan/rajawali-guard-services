@@ -22,7 +22,7 @@
     header .header-sidenav { @apply absolute right-0 top-0 z-20 w-64 h-screen shadow-md transform translate-x-full transition-all bg-white text-sm shadow-md py-6 lg:hidden; }
     header .header-sidenav.active { @apply translate-x-0 lg:hidden; }
     header .header-sidenav-item { @apply block px-6 py-5 hover:bg-gray-100; }
-    header .header-sidenav-button { @apply inline-block text-2xl text-white lg:hidden; }
+    header .header-sidenav-button { @apply inline-block text-3xl text-white lg:hidden; }
 
     .banner { @apply relative mt-20 py-6 lg:px-12 overflow-hidden; height: calc(100vh - 150px); }
     .banner .banner-wrapper { @apply flex items-end md:items-center justify-end h-full; }
